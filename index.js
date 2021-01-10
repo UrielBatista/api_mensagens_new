@@ -8,7 +8,7 @@ var postMessageRoutes = require('./controllers/postMessageController')
 
 var app = express()
 app.use(bodyParser.json())
-app.use(cors({origin:'http://localhost:3000'}))
+app.use(cors())
 app.listen(4000,()=>console.log('Server iniciou na porta : 4000'))
 
 
